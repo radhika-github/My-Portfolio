@@ -1,0 +1,147 @@
+body {
+    background-color: black;
+}
+
+.typewriter #typing {
+    width: auto;
+    color: #16e9d6;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 4.5s steps(100, end),
+    blink-caret .50s step-end infinite;
+    font-size: 100px;
+}
+
+@keyframes typing {
+    from {
+        max-width: 0
+    }
+    to {
+        max-width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #16e9d6
+    }
+}
+
+.center {
+    left: 0;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+
+}
+
+/*Main paing styling*/
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: #ddd; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.home a:hover {
+    /*background-color: #ddd; !* Grey background color *!
+    color: black; !* Black text color *!*/
+    font-weight: bold;
+    color: #16E9D6;
+}
+
+.links a:hover {
+    /*background-color: #ddd; !* Grey background color *!
+    color: black; !* Black text color *!*/
+    color: #16E9D6;
+}
+
+.split {
+    width: 70%;
+    height: 45%;
+    float: right;
+    border: 4px solid black;
+    background-image: url("/images/profile.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+.section_header {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 20%;
+    width: 100%;
+    font-family: 'Aladin';
+    font-size: 40px;
+    color: white;
+    letter-spacing: .15em;
+}
+
+.section_body {
+    padding-left: 15%;
+    text-align: left;
+    font-family: 'Georgia';
+    font-size: 20px;
+
+
+}
+
+.project{
+    width: 40%;
+    height: 60%;
+    padding-left: 15%;
+    border: 4px solid #333;
+    /*z-index: -1;*/
+    margin: 5%;
+
+}
+
+.details{
+    /*position:relative;*/
+    /*bottom: 35%;*/
+    /*left:45%;*/
+    background-color:  #f6f9f0;
+    float: right;
+}
+
+.grid-containerr{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 10px;
+}
+.grid-item {
+    background-color: red;
+    border: 4px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
